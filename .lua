@@ -9,7 +9,7 @@ local imageLabel = Instance.new("ImageLabel")
 imageLabel.Size = UDim2.new(1,0,1,0)
 imageLabel.Position = UDim2.new(0,0,0,0)
 imageLabel.BackgroundTransparency = 1
-imageLabel.Image = "rbxassetid://12453871508"------사진 병신같으니 알아서 바꾸거나 빼라
+imageLabel.Image = "rbxassetid://14504493427"------사진 병신같으니 알아서 바꾸거나 빼라
 imageLabel.ImageTransparency = 1
 imageLabel.Parent = introGui
 
