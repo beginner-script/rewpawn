@@ -9,9 +9,24 @@ local imageLabel = Instance.new("ImageLabel")
 imageLabel.Size = UDim2.new(1,0,1,0)
 imageLabel.Position = UDim2.new(0,0,0,0)
 imageLabel.BackgroundTransparency = 1
-imageLabel.Image = "rbxassetid://14504493427"------사진 병신같으니 알아서 바꾸거나 빼라
+imageLabel.Image = "rbxassetid://14504493427"
 imageLabel.ImageTransparency = 1
 imageLabel.Parent = introGui
+
+local textLabel = Instance.new("TextLabel")
+textLabel.Size = UDim2.new(0.3,0,0.1,0)
+textLabel.Position = UDim2.new(0.35,0,0.45,0)
+textLabel.BackgroundTransparency = 1
+textLabel.Text = "작동됨!"
+textLabel.TextColor3 = Color3.new(1,1,1)
+textLabel.TextScaled = true
+textLabel.Font = Enum.Font.GothamBold
+textLabel.Parent = introGui
+
+task.spawn(function()
+    task.wait(2)
+    textLabel:Destroy()
+end)
 
 player.CharacterAdded:Connect(function(char)
     if respawnPos then
